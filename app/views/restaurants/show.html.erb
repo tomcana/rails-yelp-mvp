@@ -1,7 +1,13 @@
 <div class="container">
-   <h1><%= @resturant.name %></h1>
-   <h3><%= @resturant.address %></h3>
-   <h3><%= @resturant.phone_number %></h3>
-   <h3><%= @resturant.category %></h3>
-   <%= link_to "back to restaurants" restaurants_path %>
+  <div>
+    <h1><%= @restaurant.name %></h1>
+    <p><%= @restaurant.address %></p>
+    <p><%= @restaurant.phone_number %></p>
+    <p><%= @restaurant.category %></p>
+    <p><%= @restaurant.rating %></p>
+  </div>
+   <ul>
+    <li><%= link_to "Edit", edit_restaurant_path(params[:id]) %></li>
+    <li><%= link_to "Back to list", restaurants_path %></li>
+  </ul>
 </div>

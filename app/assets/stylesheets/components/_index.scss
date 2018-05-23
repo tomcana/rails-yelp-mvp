@@ -1,3 +1,12 @@
 // Import your components CSS files here.
 @import "alert";
 @import "navbar";
+
+.post {
+  display: flex;
+  list-style-type: none;
+  padding: 20px 0;
+}
+.post li:not(:last-child) {
+  margin-right: 5px;
+}
